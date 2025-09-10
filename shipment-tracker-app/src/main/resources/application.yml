@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: Shipment Tracker Application
+  main:
+    allow-circular-references: true
+  ai:
+    openai:
+      api-key: OPENAI_API_KEY
+      chat:
+        base-url: https://api.openai.com/v1/chat/completions
+        model: gpt-3.5-turbo
+        temperature: 0.0 #default 0.8
+logging:
+  level:
+    root: INFO
+    com:
+      example:
+        genai:
+          shipment:
+            tracker:
+              app: DEBUG
